@@ -26,11 +26,25 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					light: 'hsl(var(--primary-light))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					foreground: 'hsl(var(--secondary-foreground))',
+					light: 'hsl(var(--secondary-light))',
+					glow: 'hsl(var(--secondary-glow))'
+				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))',
+					light: 'hsl(var(--success-light))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))',
+					light: 'hsl(var(--warning-light))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -52,6 +66,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'dashboard-bg': 'hsl(var(--dashboard-bg))',
+				'metric-excellent': 'hsl(var(--metric-excellent))',
+				'metric-good': 'hsl(var(--metric-good))',
+				'metric-average': 'hsl(var(--metric-average))',
+				'metric-poor': 'hsl(var(--metric-poor))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -88,7 +107,16 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+				'slide-up': 'slide-up 0.5s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out'
+			},
+			boxShadow: {
+				'glow': '0 0 20px hsl(var(--primary) / 0.3)',
+				'glow-lg': '0 0 40px hsl(var(--primary) / 0.2)',
+				'inner-glow': 'inset 0 2px 4px 0 hsl(var(--primary) / 0.1)'
 			}
 		}
 	},
