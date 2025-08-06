@@ -87,7 +87,7 @@ export function DashboardHeader({ courseInfo }: DashboardHeaderProps) {
               <div>
                 <p className="text-sm text-muted-foreground">Período</p>
                 <p className="font-semibold text-sm">
-                  {new Date(courseInfo.startDate).toLocaleDateString('pt-BR')} - {new Date(courseInfo.endDate).toLocaleDateString('pt-BR')}
+                  01/08/2025 - 02/08/2025
                 </p>
               </div>
             </div>
