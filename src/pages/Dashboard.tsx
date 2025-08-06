@@ -62,7 +62,11 @@ export default function Dashboard() {
     );
   }
 
-  const courseInfo = getCourseInfo(data);
+  const courseInfo = {
+    ...getCourseInfo(data),
+    startDate: "2025-08-01",
+    endDate: "2025-08-02"
+  };
   const categoryData = calculateCategoryAverages(data);
   const npsData = calculateNPS(data);
   const feedbacks = extractFeedbacks(data);
